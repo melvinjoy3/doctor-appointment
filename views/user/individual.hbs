@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+        <p style="font-weight: bold; font-size:50px; margin-left:187px">Welcome To MobileKart</p>
+
+        <div class="row">
+            {{#each products}}
+
+            <h5 class="card-title">{{this.Name}}</h5>
+            <p class="card-text1">₹ {{this.Price}}.00 </p>
+            <p class="card-text">{{this.Description}}</p>
+            <button onclick="addToCart('{{this._id}}')"
+                class="btn btn" style="background-color:
+                #2874f0;
+                color:white">Add to Cart</button>
+
+            {{/each}}
+        </div>
+    </div>
+</section>
